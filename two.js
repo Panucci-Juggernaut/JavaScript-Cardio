@@ -84,7 +84,6 @@ function flattenArray(arrays) {
   return arrays.flat(Infinity);
 }
 
-//____________________________@missx7________________________
 
 function  flatenArray(arr){
     newArr = []
@@ -95,7 +94,6 @@ function  flatenArray(arr){
     }
     return newArr
 }
-//____________#______________@missx7____________#___________
 
 // CHALLENGE 4: ANAGRAM
 // Return true if anagram and false if not
@@ -116,8 +114,6 @@ function formatStr(str) {
     .join('');
 }
 
-//___________________________@missx7________________________
-
 function isAnagramx (str1,str2){
     const arr1 = str1.split('').sort()
     const arr2 = str2.split('').sort()
@@ -126,7 +122,6 @@ function isAnagramx (str1,str2){
 
 const isAnagramx = (str1,str2) => str1.split('').sort().every((value,index) => value ===  str2.split('').sort()[index])
 
-//____________#______________@missx7____________#___________
 
 // CHALLENGE 5: LETTER CHANGES
 // Change every letter of the string to the one that follows it and capitalize the vowels
