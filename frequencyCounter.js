@@ -58,3 +58,15 @@ function validAnagram(first, second) {
 
 // {a: 0, n: 0, g: 0, r: 0, m: 0,s:1}
 validAnagram('anagrams', 'nagaramm')
+
+// areThereDuplicates Solution (Frequency Counter)
+function areThereDuplicates() {
+  let collection = {}
+  for(let val in arguments){
+    collection[arguments[val]] = (collection[arguments[val]] || 0) + 1
+  }
+  for(let key in collection){
+    if(collection[key] > 1) return true
+  }
+  return false;
+}
